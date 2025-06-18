@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ForceDev — Плагины Minecraft</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #0e0e0e;
+      color: #e0e0e0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 180px;
+      margin-bottom: 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.4em;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 10px;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    header p {
+      font-size: 1em;
+      color: #bbbbbb;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .plugin {
+      background-color: #181818;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 24px;
+      width: 100%;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .plugin:hover {
+      transform: translateY(-6px);
+      border-color: #ffffff33;
+    }
+
+    .plugin h2 {
+      font-size: 1.4em;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .plugin p {
+      color: #bbbbbb;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+
+    .buy-button {
+      display: inline-block;
+      background: #ffffff;
+      color: #000000;
+      padding: 12px 26px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .buy-button:hover {
+      background: #dddddd;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.85em;
+      color: #666666;
+      border-top: 1px solid #1f1f1f;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://optim.tildacdn.com/tild3636-3335-4438-a434-363363633137/-/resize/900x/-/format/webp/4.png.webp" alt="ForceDev Logo">
+    <h1>ForceDev — Плагины Minecraft</h1>
+    <p>Разработка Minecraft-проектов — Мы неординарная команда разработчиков Minecraft, создающая необыкновенные проекты</p>
+  </header>
+
+  <main>
+    <div class="plugin">
+      <h2>ForceAntiSpam</h2>
+      <p>Плагин чтобы игрок не спамил командами через /, а также в глобальном и локальном чате.</p>
+      <p class="price">Цена: 109 рублей</p>
+      <a class="buy-button" href="https://discord.gg/fZnphq8sQz" target="_blank">Купить</a>
+    </div>
+
+    <div class="plugin">
+      <h2>ForceTPS</h2>
+      <p>Плагин для отображения TPS сервера. В конфиге указывается сервер для Velocity.</p>
+      <p class="price">Цена: 69 рублей</p>
+      <a class="buy-button" href="https://discord.gg/fZnphq8sQz" target="_blank">Купить</a>
+    </div>
+
+    <div class="plugin">
+      <h2>ForceSpecна</h2>
+      <p>Плагин, при вводе /spec во время PVP с читером, у модератора появляется уведомление на экране и в чате.</p>
+      <p class="price">Цена: 59 рублей</p>
+      <a class="buy-button" href="https://discord.gg/fZnphq8sQz" target="_blank">Купить</a>
+    </div>
+
+    <div class="plugin">
+      <h2>ReallyWorld Full</h2>
+      <p>Полная копия сервера ReallyWorld. Готовая сборка для вашего проекта.</p>
+      <p class="price">Цена: 599 рублей</p>
+      <a class="buy-button" href="https://discord.gg/fZnphq8sQz" target="_blank">Купить</a>
+    </div>
+  </main>
+
+  <footer>
+    © ForceDev 2025. Все права защищены.
+  </footer>
+</body>
+</html>
